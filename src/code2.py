@@ -222,7 +222,7 @@ def get_wrist(mask):
 def analyze_chessboard(image,affine_correct_flag):
 	clone = image.copy()
 	gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
-	cv2.setMouseCallback(window_name1, click_and_crop)
+	# cv2.setMouseCallback(window_name1, click_and_crop)
 
 	dst=np.copy(image) # created to ease affine_correct mode
 	affine_correct_parameters=None
